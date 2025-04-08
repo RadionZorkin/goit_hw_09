@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Http request</title>
+  <link rel="stylesheet" href="css/common.css" />
+</head>
+
+<body>
+  <p><a href="index.html">Go back</a></p>
+
+  <!-- Перша форма — не чіпаємо -->
+  <form action="#" class="js-search-form">
+    <input type="text" name="query">
+    <button type="submit">ПОШУК</button>
+  </form>
+  <div class="js-card-container"></div>
+
+  <script src="js/http-request.js" type="module"></script>
+
+  <!-- Друга форма — змінені селектори -->
+  <form class="form-inline search-form alt-search-form">
+    <div class="form-group mx-sm-3 mb-2">
+      <label for="altSearchInput" class="sr-only">Что ищем?</label>
+      <input type="text" class="form-control-alt" name="altQuery" id="altSearchInput" placeholder="Что ищем?"
+        autocomplete="off" />
+    </div>
+    <button type="submit" class="btn btn-secondary mb-2">Искать</button>
+  </form>
+
+  <ul class="articles alt-articles-container"></ul>
+
+  <button type="button" class="btn btn-secondary alt-load-more" data-action="load-more-alt">
+    <span class="spinner-border spinner-border-sm spinner is-hidden" role="status" aria-hidden="true"></span>
+    <span class="alt-label">Показать ещё</span>
+  </button>
+</body>
+
+
+</html>

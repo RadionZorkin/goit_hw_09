@@ -16,3 +16,36 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.timer {
+  display: flex;
+  gap: 5px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  inline-size: 50px;
+}
+
+.value {
+  font-size: 30px;
+}
+.label {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+}
+button.is-hidden {
+  display: none;
+}
+
+button > .spinner.is-hidden {
+  display: none;
+}
